@@ -19,4 +19,13 @@ public class Testmaximum {
 		}
 		System.out.println("Maximum Float: " + inputArray[inputArray.length - 1] + "f");
 	}
+	// Method to find Maximum String
+	public void maxElement(String[] inputArray) {
+		for(int i=0; i<inputArray.length-1; i++) {
+			if(inputArray[i].compareTo(inputArray[i+1]) > 0) {
+				inputArray[i+1] = inputArray[i];
+			}
+		}
+		System.out.println("Maximum String: " + inputArray[inputArray.length - 1]);
+	}
 }
